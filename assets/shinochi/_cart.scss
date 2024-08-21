@@ -1,0 +1,280 @@
+@mixin add-to-cart($bg-color) {
+    padding: 10px;
+    gap: 10px;
+    width: 75%;
+    position: absolute;
+    left: 50%;
+    top: 62%;
+    transform: translateX(-50%);
+    border: 1px solid $base-red;
+    border-radius: 20px;
+    background-color: $bg-color;
+}
+
+@mixin add-to-cart-item($display, $gap, $font-weight-p, $font-size-p) {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: $display;
+    gap: $gap;
+
+    p {
+        margin: 0;
+        font-weight: $font-weight-p;
+        font-size: $font-size-p;
+    }
+}
+
+.menu-list__item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+
+    p {
+        margin: 0;
+    }
+
+    .menu-list__item-img {
+        width: 100%;
+        border-radius: 5px;
+
+        &:hover {
+            border: 1px solid $base-red;
+        }
+    }
+
+    .menu-list__item-add-to-cart {
+        @include add-to-cart($rose-50);
+
+        .menu-list__item-add-to-cart-view {
+            @include add-to-cart-item(flex, 10px, 600, 16);
+
+            i {
+                display: block;
+                width: 20px;
+                height: 20px;
+                background-repeat: none;
+                background-size: cover;
+            }
+        }
+
+        .menu-list__item-add-to-cart-choose {
+            @include add-to-cart-item(none, 50px, 400, 16);
+            
+            .menu-list__item-add-to-cart-container-indecrease {
+                width: 20px;
+                height: 20px;
+                padding: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 0.1px solid $rose-100;
+                border-radius: 50%;
+                background-color: $base-red;
+
+                img {
+                    width: 100%;
+                }
+
+                &:hover {
+                    border-color: $red-dark;
+                    background-color: $red-dark;
+                }
+            }
+            
+
+            p {
+                color: $rose-100;
+                font-weight: 400;
+            }
+        }
+
+        &:hover {
+            background-color: $base-red;
+
+            .menu-list__item-add-to-cart-view {
+                display: none;
+            }
+
+            .menu-list__item-add-to-cart-choose {
+                display: flex;
+            }
+
+        }
+        
+    }
+
+    .menu-list__item-name {
+        padding-top: 30px;
+        color: $rose-400;
+        font-weight: 400;
+    }
+
+    .menu-list__item-detail {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .menu-list__item-price {
+        font-size: 18px;
+        font-weight: 600;
+        color: $base-red;
+    }
+}
+
+
+// Order cart
+@mixin od-cart() {
+    padding: 20px;
+    padding-top: 0;
+    flex-direction: column;
+    background-color: $rose-50;
+    border-radius: 10px;
+
+    h4 {
+        font-size: $font-size-vlg - 4px;
+        color: $base-red;
+    }
+
+    img {
+        width: 70%;
+        align-self: center;
+    }
+
+    @content;
+}
+
+// Empty cart
+.cart-empty {
+    @include od-cart();
+
+    .cart-empty__guide {
+        color: $rose-500;
+        text-align: center;
+    }
+}
+
+// Cart filled
+.cart-filled {
+    @include od-cart() {
+        h6 {
+            margin: 0;
+            font-size: $font-size-lg;
+            font-weight: 500;
+            color: $rose-900;
+        }
+    };
+
+    li {
+        padding: 18px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 0.1px solid $rose-500;
+
+        .cart-filled__item-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            justify-items: center;
+
+            .cart-fille__item-detail {
+                display: flex;
+                justify-content: flex-start;
+                gap: 10px;
+
+                p {margin-top: 8px;}
+
+                .cart-filled__item-amount {
+                    color: $base-red;
+                    font-weight: 700;
+                }
+
+                .cart-filled__item-price {
+                    color: $rose-500;
+                    font-weight: 300;
+                }
+
+                .cart-filled__item-total-price {
+                    color: $rose-500;
+                    font-weight: 650;
+                }
+            }
+
+        }
+
+        .cart-filled__item-cancel {
+            width: 25px;
+            height: 25px;
+            background-size: 70%;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50%;
+            border: 2px solid $rose-500;
+            cursor: pointer;
+
+            &:hover {
+                border-color: $rose-900;
+                background-color: $base-red;
+            }
+        }
+    }
+
+    .cart-filled__total {
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h4, p {
+            margin: 0;
+        }
+
+        h4 {
+            color: $rose-900;
+        }
+    }
+
+    .cart-filled__carbon-neutral-box {
+        margin: 20px 0;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $rose-100;
+        height: 60px;
+        border-radius: 10px;
+
+        img {
+            width: 10%;
+        }
+
+        p {
+            margin: 0;
+            color: $rose-500;
+            font-weight: 450;
+
+            span {
+                font-weight: bolder;
+            }
+        }
+    }
+
+    .cart-filled__confirm {
+        padding: 20px 0;
+        background-color: $base-red;
+        border-radius: 30px;
+        border: none;
+        font-size: $font-size-lg;
+        font-weight: 500;
+        color: $rose-100;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $red-dark;
+        }
+    }
+}

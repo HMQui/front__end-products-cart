@@ -1,0 +1,67 @@
+{
+    "products": [
+      {
+        "id": "0",
+        "name": "Waffle with Berries",
+        "amount": 53,
+        "price": 6.5,
+        "img": "./assets/images/image-waffle-thumbnail.jpg"
+      },
+      {
+        "id": "1",
+        "name": "Classic Tiramisu",
+        "amount": 0,
+        "price": 5.5,
+        "img": "./assets/images/image-tiramisu-thumbnail.jpg"
+      },
+      {
+        "id": "2",
+        "name": "Red Velvet Cake",
+        "amount": 0,
+        "price": 4.5,
+        "img": "./assets/images/image-cake-thumbnail.jpg"
+      },
+      {
+        "id": "3",
+        "name": "Vanilla Bean Creme Brulee",
+        "amount": 0,
+        "price": 7,
+        "img": "./assets/images/image-creme-brulee-thumbnail.jpg"
+      },
+      {
+        "id": "4",
+        "name": "Pistachio Baklava",
+        "amount": 0,
+        "price": 4,
+        "img": "./assets/images/image-baklava-thumbnail.jpg"
+      },
+      {
+        "id": "5",
+        "name": "Salted Caramel Brownie",
+        "amount": 0,
+        "price": 5.5,
+        "img": "./assets/images/image-brownie-thumbnail.jpg"
+      },
+      {
+        "id": "6",
+        "name": "Macaron Mix of Five",
+        "amount": 0,
+        "price": 8,
+        "img": "./assets/images/image-macaron-thumbnail.jpg"
+      },
+      {
+        "id": "7",
+        "name": "Lemon Meringue Pie",
+        "amount": 0,
+        "price": 8,
+        "img": "./assets/images/image-meringue-thumbnail.jpg"
+      },
+      {
+        "id": "8",
+        "name": "Vanilla Panna Cotta",
+        "amount": 0,
+        "price": 6.5,
+        "img": "./assets/images/image-panna-cotta-thumbnail.jpg"
+      }
+    ]
+  }

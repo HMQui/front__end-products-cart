@@ -1,0 +1,119 @@
+.auth-form {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(72, 68, 68, 0.5);
+    z-index: 1;
+    margin: 0;
+    position: fixed;
+    top: 0;
+
+    h4 {
+        font-size: $font-size-vlg;
+        color: $rose-900;
+    }
+
+    p, h4, h5, h6, div {
+        margin: 0;
+    }
+
+    .container {
+        padding: 20px;
+        margin: auto;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        background-color: $rose-50;
+        border-radius: 10px;
+        min-width: 40%;
+        max-height: 80%;
+
+        .img-confirm {
+            width: 10%;
+        }
+
+        .auth-form__sub-title{
+            font-weight: 400;
+            color: $rose-500;
+            font-size: $font-size-sm;
+        }
+
+        .auth-form__info {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            background-color: mix(white, $rose-500, 80%);
+            border-radius: 5px;
+
+            .auth-form__list {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                overflow-y: auto;
+                height: 210px;
+
+                .auth-form__items {
+                    display: flex;
+                    justify-content: space-between;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+
+                    .img-thumbnail {
+                        border-radius: 5px;
+                        width: 60px;
+                        height: 60px;
+                    }
+
+                    .auth-form__items-detail {
+                        flex-grow: 4;
+
+                        .auth-form__items-name {
+                            font-weight: 700;
+                        }
+
+                        .auth-form__items-amount-price {
+                            margin-top: 10px;
+                            display: flex;
+                            gap: 20px;
+
+                            .auth-form__items-amount {
+                                color: $base-red;
+                                font-weight: 700;
+                            }
+
+                            .auth-form__items-price {
+                                color: $rose-500;
+                                font-weight: 450;
+                            }
+                        }
+                    }
+
+                    .auth-form__items-total-price {
+                        flex-grow: 1;
+                        color: $rose-900;
+                        font-weight: 600;
+                        font-size: 1.2rem;
+                        text-align: right;
+                    }
+                    
+                }
+            }
+
+            .auth-form__container-total-price {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+        .auth-form__start-order {
+            padding: 15px;
+            border: none;
+            border-radius: 25px;
+            background-color: $base-red;
+            color: $rose-50;
+            cursor: pointer;
+        }
+    }
+}

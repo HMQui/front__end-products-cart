@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/CSS/grid.css">
+  <link rel="stylesheet" href="./assets/CSS/base.css">
+  <link rel="stylesheet" href="./assets/CSS/index.css">
+  <link rel="stylesheet" href="./assets/CSS/responsive.css">
+  <title>Frontend Mentor | Product list with cart</title>
+
+</head>
+<body style="position: relative;">
+  <div class="wrapper">
+    <div class="grid">
+      <div class="row">
+        <div class="col c-8 pb1-12 m-12">
+          <div class="row">
+            <div class="col c-12 pb1-12 m-12">
+              <h4 class="menu-title text-font-size-vlg">Desserts</h4>
+            </div>
+          </div>
+          <div class="row responsive-m-center-list">
+            <div class="col c-8-3 pb1-8-3 m-12 menu-list">
+              <div class="menu-list__item" id="0">
+                <picture>
+                  <source media="(max-width: 46.62599999rem) and (min-width: 22.5rem)" srcset="./assets/images/image-waffle-mobile.jpg">
+                  <img src="./assets/images/image-waffle-desktop.jpg" alt="" class="menu-list__item-img">
+                </picture>
+                <div class="menu-list__item-add-to-cart">
+                  <!-- Users view add to cart -->
+                  <div class="menu-list__item-add-to-cart-view">
+                    <i style="background-image: url('./assets/images/icon-add-to-cart.svg');"></i>
+                    <p class="menu-list__item-add-to-cart-select">Add to Cart</p>
+                  </div>
+                  <!-- Users choose to add to cart -->
+                  <div class="menu-list__item-add-to-cart-choose">
+                    <button class="menu-list__item-add-to-cart-container-indecrease decrement-button">
+                      <img src="./assets/images/icon-decrement-quantity.svg" alt="">
+                    </button>
+                    <p class="menu-list__item-add-to-cart-amount">0</p>
+                    <button class="menu-list__item-add-to-cart-container-indecrease increment-button">
+                      <img src="./assets/images/icon-increment-quantity.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+                
+                <p class="menu-list__item-name">Waffle</p>
+                <p class="menu-list__item-detail">Waffle with Berries</p>
+                <p class="menu-list__item-price">$6.50</p>
+              </div>
+              <div class="menu-list__item" id="1">
+                <picture>
+                  <source media="(max-width: 46.62599999rem) and (min-width: 22.5rem)" srcset="./assets/images/image-tiramisu-mobile.jpg">
+                  <img src="./assets/images/image-tiramisu-desktop.jpg" alt="" class="menu-list__item-img">
+                </picture>
+                <div class="menu-list__item-add-to-cart">
+                  <!-- Users view add to cart -->
+                  <div class="menu-list__item-add-to-cart-view">
+                    <i style="background-image: url('./assets/images/icon-add-to-cart.svg');"></i>
+                    <p class="menu-list__item-add-to-cart-select">Add to Cart</p>
+                  </div>
+                  <!-- Users choose to add to cart -->
+                  <div class="menu-list__item-add-to-cart-choose">
+                    <button class="menu-list__item-add-to-cart-container-indecrease decrement-button">
+                      <img src="./assets/images/icon-decrement-quantity.svg" alt="">
+                    </button>
+                    <p class="menu-list__item-add-to-cart-amount">0</p>
+                    <button class="menu-list__item-add-to-cart-container-indecrease increment-button">
+                      <img src="./assets/images/icon-increment-quantity.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+                <p class="menu-list__item-name">Tiramisu</p>
+                <p class="menu-list__item-detail">Classic Tiramisu</p>
+                <p class="menu-list__item-price">$5.50</p>
+              </div>
+              <div class="menu-list__item" id="2">
+                <picture>
+                  <source media="(max-width: 46.62599999rem) and (min-width: 22.5rem)" srcset="./assets/images/image-cake-mobile.jpg">
+                  <img src="./assets/images/image-cake-desktop.jpg" alt="" class="menu-list__item-img">
+                </picture>
+                <div class="menu-list__item-add-to-cart">
+                  <!-- Users view add to cart -->
+                  <div class="menu-list__item-add-to-cart-view">
+                    <i style="background-image: url('./assets/images/icon-add-to-cart.svg');"></i>
+                    <p class="menu-list__item-add-to-cart-select">Add to Cart</p>
+                  </div>
+                  <!-- Users choose to add to cart -->
+                  <div class="menu-list__item-add-to-cart-choose">
+                    <button class="menu-list__item-add-to-cart-container-indecrease decrement-button">
+                      <img src="./assets/images/icon-decrement-quantity.svg" alt="">
+                    </button>
+                    <p class="menu-list__item-add-to-cart-amount">0</p>
+                    <button class="menu-list__item-add-to-cart-container-indecrease increment-button">
+                      <img src="./assets/images/icon-increment-quantity.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+                <p class="menu-list__item-name">Cake</p>
+                <p class="menu-list__item-detail">Red Velvet Cake</p>
+                <p class="menu-list__item-price">$4.50</p>
+              </div>
+            </div>
+            <div class="col c-8-3 pb1-8-3 m-12 menu-list">
+              <div class="menu-list__item" id="3">
+                <picture>
+                  <source media="(max-width: 46.62599999rem) and (min-width: 22.5rem)" srcset="./assets/images/image-creme-brulee-mobile.jpg">
+                  <img src="./assets/images/image-creme-brulee-desktop.jpg" alt="" class="menu-list__item-img">
+                </picture>
+                <div class="menu-list__item-add-to-cart">
+                  <!-- Users view add to cart -->
+                  <div class="menu-list__item-add-to-cart-view">
+                    <i style="background-image: url('./assets/images/icon-add-to-cart.svg');"></i>
+                    <p class="menu-list__item-add-to-cart-select">Add to Cart</p>
+                  </div>
+                  <!-- Users choose to add to cart -->
+                  <div class="menu-list__item-add-to-cart-choose">
+                    <button class="menu-list__item-add-to-cart-container-indecrease decrement-button">
+                      <img src="./assets/images/icon-decrement-quantity.svg" alt="">
+                    </button>
+                    <p class="menu-list__item-add-to-cart-amount">0</p>
+                    <button class="menu-list__item-add-to-cart-container-indecrease increment-button">
+                      <img src="./assets/images/icon-increment-quantity.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+                <p class="menu-list__item-name">Creme Brulee</p>
+                <p class="menu-list__item-detail">Vanilla Bean Creme Brulee</p>
+                <p class="menu-list__item-price">$7.00</p>
+              </div>
+              <div class="menu-list__item" id="4">
+                <picture>
+                  <source media="(max-width: 46.62599999rem) and (min-width: 22.5rem)" srcset="./assets/images/image-baklava-mobile.jpg">
+                  <img src="./assets/images/image-baklava-desktop.jpg" alt="" class="menu-list__item-img">
+                </picture>
+                <div class="menu-list__item-add-to-cart">
+                  <!-- Users view add to cart -->
+                  <div class="menu-list__item-add-to-cart-view">
+                    <i style="background-image: url('./assets/images/icon-add-to-cart.svg');"></i>
+                    <p class="menu-list__item-add-to-cart-select">Add to Cart</p>
+                  </div>
+                  <!-- Users choose to add to cart -->
+                  <div class="menu-list__item-add-to-cart-choose">
+                    <button class="menu-list__item-add-to-cart-container-indecrease decrement-button">
+                      <img src="./assets/images/icon-decrement-quantity.svg" alt="">
+                    </button>
+                    <p class="menu-list__item-add-to-cart-amount">0</p>
+                    <button class="menu-list__item-add-to-cart-container-indecrease increment-button">
+                      <img src="./assets/images/icon-increment-quantity.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+                <p class="menu-list__item-name">Baklava</p>
+                <p class="menu-list__item-detail">Pistachio Baklava</p>
+                <p class="menu-list__item-price">$4.00</p>
+              </div>
+              <div class="menu-list__item" id="5">
+                <picture>
+                  <source media="(max-width: 46.62599999rem) and (min-width: 22.5rem)" srcset="./assets/images/image-brownie-mobile.jpg">
+                  <img src="./assets/images/image-brownie-desktop.jpg" alt="" class="menu-list__item-img">
+                </picture>
+                <div class="menu-list__item-add-to-cart">
+                  <!-- Users view add to cart -->
+                  <div class="menu-list__item-add-to-cart-view">
+                    <i style="background-image: url('./assets/images/icon-add-to-cart.svg');"></i>
+                    <p class="menu-list__item-add-to-cart-select">Add to Cart</p>
+                  </div>
+                  <!-- Users choose to add to cart -->
+                  <div class="menu-list__item-add-to-cart-choose">
+                    <button class="menu-list__item-add-to-cart-container-indecrease decrement-button">
+                      <img src="./assets/images/icon-decrement-quantity.svg" alt="">
+                    </button>
+                    <p class="menu-list__item-add-to-cart-amount">0</p>
+                    <button class="menu-list__item-add-to-cart-container-indecrease increment-button">
+                      <img src="./assets/images/icon-increment-quantity.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+                <p class="menu-list__item-name">Brownie</p>
+                <p class="menu-list__item-detail">Salted Caramel Brownie</p>
+                <p class="menu-list__item-price">$5.50</p>
+              </div>
+            </div>
+            <div class="col c-8-3 pb1-8-3 m-12 menu-list">
+              <div class="menu-list__item" id="6">
+                <picture>
+                  <source media="(max-width: 46.62599999rem) and (min-width: 22.5rem)" srcset="./assets/images/image-macaron-mobile.jpg">
+                  <img src="./assets/images/image-macaron-desktop.jpg" alt="" class="menu-list__item-img">
+                </picture>
+                <div class="menu-list__item-add-to-cart">
+                  <!-- Users view add to cart -->
+                  <div class="menu-list__item-add-to-cart-view">
+                    <i style="background-image: url('./assets/images/icon-add-to-cart.svg');"></i>
+                    <p class="menu-list__item-add-to-cart-select">Add to Cart</p>
+                  </div>
+                  <!-- Users choose to add to cart -->
+                  <div class="menu-list__item-add-to-cart-choose">
+                    <button class="menu-list__item-add-to-cart-container-indecrease decrement-button">
+                      <img src="./assets/images/icon-decrement-quantity.svg" alt="">
+                    </button>
+                    <p class="menu-list__item-add-to-cart-amount">0</p>
+                    <button class="menu-list__item-add-to-cart-container-indecrease increment-button">
+                      <img src="./assets/images/icon-increment-quantity.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+                <p class="menu-list__item-name">Macaron</p>
+                <p class="menu-list__item-detail">Macaron Mix of Five</p>
+                <p class="menu-list__item-price">$8.00</p>
+              </div>
+              <div class="menu-list__item" id="7">
+                <picture>
+                  <source media="(max-width: 46.62599999rem) and (min-width: 22.5rem)" srcset="./assets/images/image-meringue-mobile.jpg">
+                  <img src="./assets/images/image-meringue-desktop.jpg" alt="" class="menu-list__item-img">
+                </picture>
+                <div class="menu-list__item-add-to-cart">
+                  <!-- Users view add to cart -->
+                  <div class="menu-list__item-add-to-cart-view">
+                    <i style="background-image: url('./assets/images/icon-add-to-cart.svg');"></i>
+                    <p class="menu-list__item-add-to-cart-select">Add to Cart</p>
+                  </div>
+                  <!-- Users choose to add to cart -->
+                  <div class="menu-list__item-add-to-cart-choose">
+                    <button class="menu-list__item-add-to-cart-container-indecrease decrement-button">
+                      <img src="./assets/images/icon-decrement-quantity.svg" alt="">
+                    </button>
+                    <p class="menu-list__item-add-to-cart-amount">0</p>
+                    <button class="menu-list__item-add-to-cart-container-indecrease increment-button">
+                      <img src="./assets/images/icon-increment-quantity.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+                <p class="menu-list__item-name">Pie</p>
+                <p class="menu-list__item-detail">Lemon Meringue Pie</p>
+                <p class="menu-list__item-price">$5.00</p>
+              </div>
+              <div class="menu-list__item" id="8">
+                <picture>
+                  <source media="(max-width: 46.62599999rem) and (min-width: 22.5rem)" srcset="./assets/images/image-panna-cotta-mobile.jpg">
+                  <img src="./assets/images/image-panna-cotta-desktop.jpg" alt="" class="menu-list__item-img">
+                </picture>
+                <div class="menu-list__item-add-to-cart">
+                  <!-- Users view add to cart -->
+                  <div class="menu-list__item-add-to-cart-view">
+                    <i style="background-image: url('./assets/images/icon-add-to-cart.svg');"></i>
+                    <p class="menu-list__item-add-to-cart-select">Add to Cart</p>
+                  </div>
+                  <!-- Users choose to add to cart -->
+                  <div class="menu-list__item-add-to-cart-choose">
+                    <button class="menu-list__item-add-to-cart-container-indecrease decrement-button">
+                      <img src="./assets/images/icon-decrement-quantity.svg" alt="">
+                    </button>
+                    <p class="menu-list__item-add-to-cart-amount">0</p>
+                    <button class="menu-list__item-add-to-cart-container-indecrease increment-button">
+                      <img src="./assets/images/icon-increment-quantity.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+                <p class="menu-list__item-name">Panna Cotta</p>
+                <p class="menu-list__item-detail">Vanilla Panna Cotta</p>
+                <p class="menu-list__item-price">$6.50</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col c-4 pb1-12 m-12">
+          <!-- Empty cart desktop -->
+           <div class="cart-empty display-flex">
+            <h4 class="cart-empty__title">Your Carts (0)</h4>
+            <img src="./assets/images/illustration-empty-cart.svg" alt="">
+            <p class="cart-empty__guide">Your added items will appear here</p>
+           </div>
+
+           <!-- Cart that has product(s) -->
+           <div class="cart-filled display-none">
+            <h4 class="cart-filled__title">Your Cart(7)</h4>
+            <div class="cart-filled__products">
+              <ul class="cart-filled__list">
+              </ul>
+            </div>
+            <div class="cart-filled__total">
+              <p>Order Total</p>
+              <h4 class="cart-filled__total-price">$46.50</h4>
+            </div>
+            <div class="cart-filled__carbon-neutral-box">
+              <img src="./assets/images/icon-carbon-neutral.svg" alt="">
+              <p>This is a <span>carbon-neutral</span> delivery</p>
+            </div>
+            <button class="cart-filled__confirm">Confirm Order</button>
+           </div>
+           
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Auth form -->
+  <div class="auth-form display-none">
+    <div class="container">
+      <img src="./assets/images/icon-order-confirmed.svg" alt="" class="img-confirm">
+      <h4 class="auth-form__title">Order Confirmed</h4>
+      <h6 class="auth-form__sub-title">We hope your enjoy your food!</h6>
+      <div class="auth-form__info">
+        <ul class="auth-form__list">
+          <li class="auth-form__items">
+            <img src="./assets/images/image-tiramisu-thumbnail.jpg" alt="" class="img-thumbnail">
+            <div class="auth-form__items-detail">
+              <p class="auth-form__items-name">Classic Tiramisu</p>
+              <div class="auth-form__items-amount-price">
+                <p class="auth-form__items-amount">1x</p>
+                <p class="auth-form__items-price">@ $5.50</p>
+              </div>
+            </div>
+            <p class="auth-form__items-total-price">$5.50</p>
+          </li>
+          <li class="auth-form__items">
+            <img src="./assets/images/image-creme-brulee-thumbnail.jpg" alt="" class="img-thumbnail">
+            <div class="auth-form__items-detail">
+              <p class="auth-form__items-name">Vanilla Bean Creme Brulee</p>
+              <div class="auth-form__items-amount-price">
+                <p class="auth-form__items-amount">4x</p>
+                <p class="auth-form__items-price">@ $7.00</p>
+              </div>
+            </div>
+            <p class="auth-form__items-total-price">$28.00</p>
+          </li>
+          <li class="auth-form__items">
+            <img src="./assets/images/image-panna-cotta-thumbnail.jpg" alt="" class="img-thumbnail">
+            <div class="auth-form__items-detail">
+              <p class="auth-form__items-name">Vanilla Panna Costa</p>
+              <div class="auth-form__items-amount-price">
+                <p class="auth-form__items-amount">2x</p>
+                <p class="auth-form__items-price">@ $6.50</p>
+              </div>
+            </div>
+            <p class="auth-form__items-total-price">$13.00</p>
+          </li>
+        </ul>
+        <div class="auth-form__container-total-price">
+          <p class="auth-form__total-price-text">Order Total</p>
+          <h4 class="auth-form__total-price">$46.50</h4>
+        </div>
+      </div>
+      <button class="auth-form__start-order">Start New Order</button>
+    </div>
+  </div>
+
+
+  <script src="./assets/JS/add-to-cart.js"></script>
+  <script src="./assets/JS/auth-form.js"></script>
+</body>
+</html>
